@@ -21,7 +21,6 @@ if (toggleButton) {
     });
 }
 
-
 function mostrarAlertaNoticia() {
     alert("¡Alerta de Inteligencia!\nEl artículo completo se desbloqueará en la próxima temporada.");
 }

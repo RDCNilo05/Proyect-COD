@@ -2,8 +2,7 @@
 :root {
     --bg-color: #f8f9fa;
     --text-color: #212529;
-    --card-bg: #ffffff;
-    --hover-bg: #e9ecef;
+    --card-bg: #ffffff;    --hover-bg: #e9ecef;
 }
 
 body.dark-mode {
@@ -13,14 +12,12 @@ body.dark-mode {
     --hover-bg: #2d2d2d;
 }
 
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-
 
 .cod-font {
     font-family: 'Black Ops One', system-ui;
@@ -33,13 +30,11 @@ body {
     transition: background-color 0.4s ease;
 }
 
-
 .img-carousel {
     height: 65vh;
     object-fit: cover;
     filter: brightness(0.6);
 }
-
 
 .hover-effect {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
