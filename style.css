@@ -1,0 +1,73 @@
+/* VARIABLES PARA MODO CLARO/OSCURO */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --hover-bg: #e9ecef;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f8f9fa;
+    --card-bg: #1e1e1e;
+    --hover-bg: #2d2d2d;
+}
+
+/* ESTILOS GLOBALES */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* FUENTE PERSONALIZADA */
+.cod-font {
+    font-family: 'Black Ops One', system-ui;
+    letter-spacing: 1px;
+}
+
+.bg-card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color);
+    transition: background-color 0.4s ease;
+}
+
+/* IMÁGENES CARRUSEL */
+.img-carousel {
+    height: 65vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* EFECTOS HOVER REQUERIDOS (Cambiar fondo, color o transformar al pasar el mouse) */
+
+/* 1. Tarjetas y Artículos */
+.hover-effect {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-effect:hover {
+    transform: translateY(-8px);
+    background-color: var(--hover-bg) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 2. Botones personalizados */
+.hover-btn {
+    transition: all 0.3s ease;
+}
+.hover-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* 3. Iconos de redes sociales en el footer */
+.hover-social {
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+.hover-social:hover {
+    color: #ffc107 !important; /* Amarillo Warning de Bootstrap */
+    transform: scale(1.4) rotate(10deg);
+}

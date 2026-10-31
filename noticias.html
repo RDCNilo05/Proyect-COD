@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoD Base | Noticias</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/call-of-duty-modern-warfare.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand cod-font text-warning" href="index.html">
+                <i class="bi bi-crosshair"></i> CoD BASE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enlaces.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-3">
+                        <button id="theme-toggle" class="btn btn-outline-warning btn-sm">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="cod-font mb-4 text-center">Últimas Noticias y Parches</h1>
+        
+        <article class="row align-items-center mb-5 hover-effect rounded p-3 bg-card shadow-sm">
+            <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Soldado táctico">
+            </div>
+            <div class="col-md-7 mt-3 mt-md-0">
+                <h2>Se filtra el nuevo mapa de Resurgimiento</h2>
+                <p>Las últimas filtraciones de datos sugieren que un mapa clásico volverá con modificaciones drásticas en la próxima temporada.</p>
+                <button class="btn btn-warning fw-bold hover-btn" onclick="mostrarAlertaNoticia()">Leer Artículo Completo</button>
+            </div>
+        </article>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

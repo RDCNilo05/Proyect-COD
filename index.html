@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de la comunidad de Call of Duty con guías, noticias y multimedia.">
+    <meta name="keywords" content="Call of Duty, Warzone, Modern Warfare, Black Ops, Gaming">
+    <meta name="author" content="Tu Nombre">
+    
+    <title>CoD Base | Inicio</title>
+    
+    <!-- Ícono de la página -->
+    <link rel="icon" href="https://img.icons8.com/color/48/call-of-duty-modern-warfare.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS y Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand cod-font text-warning" href="index.html">
+                <i class="bi bi-crosshair"></i> CoD BASE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enlaces.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-3">
+                        <button id="theme-toggle" class="btn btn-outline-warning btn-sm">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 img-carousel" alt="Gamer jugando Shooter">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h2 class="cod-font">Domina el Campo de Batalla</h2>
+                    <p>Únete a la comunidad definitiva de Warzone y Multiplayer.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 img-carousel" alt="Setup de Gaming">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h2 class="cod-font">Estrategia y Precisión</h2>
+                    <p>Descubre las mejores clases y armamentos para cada temporada.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="cod-font display-4">Bienvenido a la Zona de Guerra</h1>
+            <p class="lead">Prepárate para el despliegue con la mejor información de la franquicia.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm hover-effect">
+                    <div class="card-body">
+                        <h3 class="cod-font border-bottom pb-2">Top Modos de Juego (Ordenado)</h3>
+                        <ol class="fs-5 mt-3">
+                            <li>Battle Royale (Warzone)</li>
+                            <li>Resurgimiento</li>
+                            <li>Buscar y Destruir (SnD)</li>
+                            <li>Dominio</li>
+                            <li>Punto Caliente</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm hover-effect">
+                    <div class="card-body">
+                        <h3 class="cod-font border-bottom pb-2">Clases de Armas (No ordenado)</h3>
+                        <ul class="fs-5 mt-3">
+                            <li>Rifles de Asalto (AR)</li>
+                            <li>Subfusiles (SMG)</li>
+                            <li>Rifles de Francotirador</li>
+                            <li>Ametralladoras Ligeras (LMG)</li>
+                            <li>Escopetas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-discord"></i></a>
+            </div>
+            <p class="mb-1">&copy; 2026 CoD Base - Proyecto Académico.</p>
+            <button type="button" class="btn btn-link text-warning text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+                Políticas de Privacidad
+            </button>
+        </div>
+    </footer>
+
+    <!-- Modal de Políticas de Privacidad -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title cod-font">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>En <strong>CoD Base</strong> valoramos tu privacidad. Este sitio es un proyecto educativo. No recopilamos datos personales ni vendemos información a terceros.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

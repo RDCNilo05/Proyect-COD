@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoD Base | Contacto</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/call-of-duty-modern-warfare.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand cod-font text-warning" href="index.html">
+                <i class="bi bi-crosshair"></i> CoD BASE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enlaces.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-3">
+                        <button id="theme-toggle" class="btn btn-outline-warning btn-sm">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 text-center">
+        <h1 class="cod-font mb-4">¿Quieres unirte al escuadrón?</h1>
+        
+        <div class="card bg-card shadow-lg p-5 mx-auto hover-effect border-0" style="max-width: 600px;">
+            <i class="bi bi-envelope-at-fill display-1 text-warning mb-3"></i>
+            <h3>Envíanos un correo</h3>
+            <p>Si tienes sugerencias de loadouts o noticias, escríbenos. Se abrirá tu aplicación de correo predeterminada.</p>
+            
+            <!-- Botón Mailto -->
+            <a href="mailto:tu-correo@estudiantil.edu?subject=Aporte para CoD Base&body=Hola, me gustaría compartir la siguiente información:" class="btn btn-lg btn-dark text-warning hover-btn mt-3">
+                <i class="bi bi-send-fill"></i> Redactar Correo
+            </a>
+            
+            <hr class="my-4 border-secondary">
+            
+            <!-- Botón de Alerta JavaScript -->
+            <button class="btn btn-danger hover-btn w-100" onclick="confirmarSuscripcion()">
+                <i class="bi bi-bell-fill"></i> Suscribirse al Boletín de Parches
+            </button>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
