@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoD Base | Noticias</title>
+    <meta name="description" content="Últimas noticias, parches y filtraciones de Call of Duty.">
+    <meta name="keywords" content="Noticias Call of Duty, Parches Warzone, Filtraciones CoD">
+    <meta name="author" content="Tu Nombre">
+    
+    <title>CoD Base | Noticias e Inteligencia</title>
+    
     <link rel="icon" href="https://img.icons8.com/color/48/call-of-duty-modern-warfare.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,20 +46,156 @@
         </div>
     </nav>
 
+    <header class="bg-dark py-5 border-bottom border-secondary">
+        <div class="container text-center">
+            <h1 class="cod-font display-4 text-white"><i class="bi bi-broadcast"></i> Centro de Inteligencia</h1>
+            <p class="lead text-muted">Mantente al día con las últimas notas del parche, filtraciones y eventos de temporada.</p>
+        </div>
+    </header>
+
     <main class="container my-5">
-        <h1 class="cod-font mb-4 text-center">Últimas Noticias y Parches</h1>
         
-        <article class="row align-items-center mb-5 hover-effect rounded p-3 bg-card shadow-sm">
-            <div class="col-md-5">
-                <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Soldado táctico">
+        <div class="card mb-5 bg-card shadow hover-effect border-0">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?w=1200&h=800&fit=crop" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Soldado táctico en ruinas">
+                </div>
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5">
+                        <span class="badge bg-danger mb-2 fs-6">Exclusiva</span>
+                        <h2 class="card-title cod-font mb-3">Se filtra el nuevo mapa de Resurgimiento para la próxima temporada</h2>
+                        <p class="card-text fs-5 text-muted mb-4">Los mineros de datos han encontrado referencias a un mapa clásico remasterizado. Este nuevo entorno promete combates frenéticos, un sistema de túneles subterráneos y una nueva mecánica de extracción de botín.</p>
+                        <p class="card-text"><small class="text-warning"><i class="bi bi-clock"></i> Publicado hace 2 horas</small></p>
+                        <!-- Botón con alerta JS -->
+                        <button class="btn btn-warning fw-bold hover-btn mt-2" onclick="mostrarAlertaNoticia()">
+                            <i class="bi bi-book-half"></i> Leer Artículo Completo
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-7 mt-3 mt-md-0">
-                <h2>Se filtra el nuevo mapa de Resurgimiento</h2>
-                <p>Las últimas filtraciones de datos sugieren que un mapa clásico volverá con modificaciones drásticas en la próxima temporada.</p>
-                <button class="btn btn-warning fw-bold hover-btn" onclick="mostrarAlertaNoticia()">Leer Artículo Completo</button>
+        </div>
+
+        <h3 class="cod-font border-bottom pb-2 mb-4">Más Reportes</h3>
+
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=300&fit=crop" class="card-img-top" alt="Actualización">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Actualización</span>
+                        <h5 class="card-title cod-font">Pase de Batalla Revelado</h5>
+                        <p class="card-text fs-6 text-muted">La temporada recargada trae consigo 100 niveles de contenido nuevo, incluyendo skins reactivas y dos armas gratuitas.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
             </div>
-        </article>
+
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=500&h=300&fit=crop" class="card-img-top" alt="Doble XP">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Comunidad</span>
+                        <h5 class="card-title cod-font">Fin de Semana Doble XP</h5>
+                        <p class="card-text fs-6 text-muted">Prepárate para subir de nivel tus armas más rápido. Este viernes arranca el evento de doble experiencia para todos los jugadores.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=500&h=300&fit=crop" class="card-img-top" alt="Parche">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Notas del Parche</span>
+                        <h5 class="card-title cod-font">Rotación de Mapas en Clasificatorias</h5>
+                        <p class="card-text fs-6 text-muted">Las partidas Ranked Mode cambian sus mapas permitidos. Conoce cuáles escenarios salen y cuáles regresan al juego competitivo.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1582260662660-f8fb233b8a6e?w=500&h=300&fit=crop" class="card-img-top" alt="Operadores">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Tienda</span>
+                        <h5 class="card-title cod-font">Nuevo Lote de Operador Crossover</h5>
+                        <p class="card-text fs-6 text-muted">Una famosa franquicia de películas de acción llega a la tienda con skins, proyectos de armas trazadoras y remates únicos.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&h=300&fit=crop" class="card-img-top" alt="Torneo">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Esports</span>
+                        <h5 class="card-title cod-font">Torneo Global 2026: Inscripciones abiertas</h5>
+                        <p class="card-text fs-6 text-muted">El mayor torneo del año está por comenzar. Reúne a tu escuadrón y compite por una bolsa de premios millonaria.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 bg-card shadow-sm hover-effect border-0">
+                    <img src="https://images.unsplash.com/photo-1595590424283-b8f1784cb2c8?w=500&h=300&fit=crop" class="card-img-top" alt="Armas">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Balance</span>
+                        <h5 class="card-title cod-font">Nerfeo masivo a Rifles de Asalto</h5>
+                        <p class="card-text fs-6 text-muted">Los desarrolladores han reducido el daño a larga distancia del rifle más popular. Conoce cuáles son las mejores alternativas.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3 text-center">
+                        <button class="btn btn-outline-warning btn-sm w-100 hover-btn" onclick="mostrarAlertaNoticia()">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white mx-2 fs-4 hover-social"><i class="bi bi-discord"></i></a>
+            </div>
+            <p class="mb-1">&copy; 2026 CoD Base - Proyecto Académico.</p>
+            <button type="button" class="btn btn-link text-warning text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+                Políticas de Privacidad
+            </button>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title cod-font">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>En <strong>CoD Base</strong> valoramos tu privacidad. Este sitio es un proyecto educativo. No recopilamos datos personales ni vendemos información a terceros.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
