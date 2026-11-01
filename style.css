@@ -1,64 +1,99 @@
-
-:root {
-    --bg-color: #f8f9fa;
-    --text-color: #212529;
-    --card-bg: #ffffff;    --hover-bg: #e9ecef;
-}
-
-body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #f8f9fa;
+   :root {
+    --primary-color: #ffc107; 
+    --dark-bg: #121212;
     --card-bg: #1e1e1e;
-    --hover-bg: #2d2d2d;
+    --text-light: #f8f9fa;
+    --text-muted: #adb5bd;
+    --transition-speed: 0.3s;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
 }
 
 .cod-font {
     font-family: 'Black Ops One', system-ui;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.bg-card {
-    background-color: var(--card-bg) !important;
-    color: var(--text-color);
-    transition: background-color 0.4s ease;
-}
-
+/* Carrusel */
 .img-carousel {
-    height: 65vh;
+    height: 60vh;
     object-fit: cover;
     filter: brightness(0.6);
 }
 
-.hover-effect {
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-effect:hover {
-    transform: translateY(-8px);
-    background-color: var(--hover-bg) !important;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
+.bg-card {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.hover-btn {
-    transition: all 0.3s ease;
+.hover-effect {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
-.hover-btn:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+
+.hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2) !important;
+    border-color: var(--primary-color);
 }
 
 .hover-social {
+    transition: color var(--transition-speed) ease, transform 0.2s ease;
     display: inline-block;
-    transition: color 0.3s, transform 0.3s;
 }
+
 .hover-social:hover {
-    color: #ffc107 !important; 
-    transform: scale(1.4) rotate(10deg);
+    color: var(--primary-color) !important;
+    transform: scale(1.2);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    opacity: 0; 
+    animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.row > div:nth-child(1) .card {
+    animation-delay: 0.1s;
+}
+.row > div:nth-child(2) .card {
+    animation-delay: 0.3s;
+}
+.row > div:nth-child(3) .card {
+    animation-delay: 0.5s;
+}
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.light-mode .bg-card {
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+body.light-mode .navbar,
+body.light-mode footer {
+    background-color: #343a40 !important;
+}
+
+body.light-mode .modal-content {
+    background-color: #ffffff;
 }
